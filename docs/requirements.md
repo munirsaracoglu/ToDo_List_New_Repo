@@ -23,24 +23,3 @@ This application allows users to better plan and manage their tasks using multip
 
 ### List Item removal
 * **Requirement 12 -** Only complete List Items can be removed
-
-## Non-functional requirements
-### Performance
-* **Requirement 13 -** All remote requests should complete within 200ms
-
-### Security
-* **Requirement 14 -** Application should not be vulnerable to XSS attacks
-
-### Multi-device access
-* **Requirement 15 -** Application should allow for parallel access from multiple devices
-* **Requirement 16 -** Data modifications made on one device should be reflected on other devices
-* **Requirement 17 -** The modifications do not have to be synced across devices in real time (e.g. using HTTP Push, or WebSockets):
-reloading the page manually is an acceptable solution
-
-### User Experience
-* **Requirement 18 -** Application should follow industry standards for usability
-
-## Architecture
-Structure | Front-End | Back-End | Communication | Data Persistence
-:--- | :--- | :--- | :--- | :---
-Single-Page Application (SPA) | ReactJS | Ruby | HTTP REST/JSON | Static `json` file stored in the server

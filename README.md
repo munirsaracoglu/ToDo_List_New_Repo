@@ -19,5 +19,6 @@ The complete list of specifications for this app can be found in [requirements.m
 # Assignment Instructions
 
 The specific instructions for each one of them can be found in the links below:
+- [React Testing Library](docs/instructions/react-testing-library.md)
 - [Cypress](docs/instructions/cypress.md)
 - [Playwright](docs/instructions/playwright.md)

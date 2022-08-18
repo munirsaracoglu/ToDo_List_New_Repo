@@ -22,3 +22,6 @@ The specific instructions for each one of them can be found in the links below:
 - [React Testing Library](docs/instructions/react-testing-library.md)
 - [Cypress](docs/instructions/cypress.md)
 - [Playwright](docs/instructions/playwright.md)
+- [Capybara](docs/instructions/capybara.md)
+- [Watir](docs/instructions/watir.md)
+- [Cucumber](docs/instructions/cucumber.md)

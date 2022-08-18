@@ -12,14 +12,23 @@
     "web-vitals": "^0.2.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.25.0",
+    "@testing-library/cypress": "^8.0.3",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12.1.4"
+    "@testing-library/react": "^12.1.4",
+    "cypress": "^10.6.0",
+    "playwright": "^1.25.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test:unit": "react-scripts test --watchAll=false"
+    "cy:open": "cypress open",
+    "cy:api": "cypress run --spec 'cypress/api/**'",
+    "cy:e2e": "cypress run --spec 'cypress/e2e/**'",
+    "test:unit": "react-scripts test --watchAll=false",
+    "test:api": "yarn playwright test --project api --config playwright.config.js",
+    "test:e2e": "yarn playwright test --project e2e --config playwright.config.js"
   },
   "eslintConfig": {
     "extends": [

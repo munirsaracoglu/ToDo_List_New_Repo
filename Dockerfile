@@ -1,4 +1,4 @@
-FROM timbru31/ruby-node
+FROM timbru31/ruby-node:2.7-gallium
 
 COPY . /app
 WORKDIR /app/backend

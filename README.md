@@ -1,6 +1,6 @@
 # Overview
 
-It is a simple to-do app that acts as a sandbox for QA Interns.
+It is a simple to-do app that acts as a sandbox for QA Interns. Setup instructions can be found in [project-setup.md](docs/instructions/project-setup.md).
 
 ## Technical Overview
 
@@ -19,6 +19,7 @@ The complete list of specifications for this app can be found in [requirements.m
 # Assignment Instructions
 
 The specific instructions for each one of them can be found in the links below:
+
 - [React Testing Library](docs/instructions/react-testing-library.md)
 - [Cypress](docs/instructions/cypress.md)
 - [Playwright](docs/instructions/playwright.md)

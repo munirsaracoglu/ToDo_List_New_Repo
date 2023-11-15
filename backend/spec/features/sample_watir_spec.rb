@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 describe 'ToDo Lists', type: :feature do
   before :all do
     @browser = Watir::Browser.new :chrome, headless: true

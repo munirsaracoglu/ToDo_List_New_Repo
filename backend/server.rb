@@ -31,7 +31,7 @@ delete '/lists/:list_id' do
 end
 
 post '/list/:list_id/item/:item_id/complete/:completed' do
-  sleep rand(2..5)
+  sleep rand(5)
   @data[params['list_id'].to_i]['items'][params['item_id'].to_i]['completed'] = params['completed'] == 'true'
   File.open('data.json', 'w') { |f| f.write(@data.to_json) }
   json @data[params['list_id'].to_i]['items'][params['item_id'].to_i]

@@ -35,6 +35,6 @@ class ToDoList
   end
 
   def delete_this_text_displayed?
-    page.has_xpath?("//span[@class='DeleteItem']", wait: 5, visible: true)
+    page.has_xpath?("//span[@class='DeleteItem']")
   end
 end

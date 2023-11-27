@@ -31,7 +31,7 @@ When('I click to the checkbox near the item being added') do
 end
 
 Then('I should see the delete this item text') do
-
+  expect(@to_do_list_page.delete_this_text_displayed?).to be true
 end
 
 

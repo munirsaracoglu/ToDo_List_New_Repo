@@ -1,4 +1,12 @@
-require 'capybara/cucumber'
-require 'capybara/apparition'
+# frozen_string_literal: true
 
-Capybara.default_driver = :apparition
+require 'capybara/cucumber'
+
+Capybara.default_driver = :selenium_chrome
+Capybara.configure do |config|
+  config.default_driver = if ENV['HEADLESS'] == 'false'
+                            :selenium_chrome
+                          else
+                            :selenium_chrome_headless
+                          end
+end
